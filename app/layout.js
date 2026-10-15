@@ -17,7 +17,7 @@ export const metadata = {
   icons: { icon: "/glossy/icon.png", apple: "/glossy/icon.png" },
 };
 export default function RootLayout({ children }) {
-  const gtmId = process.env.NEXT_PUBLIC_GLOSSY_GTM_ID;
+  const gtmId = process.env.GTM_ID;
   const validGtm = /^GTM-[A-Z0-9]+$/.test(gtmId || "");
   return <html lang="en-NZ"><body className={`${display.variable} ${inter.variable} ${manrope.variable}`}>
     {validGtm && <Script id="gtm-script" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${gtmId}');` }} />}
