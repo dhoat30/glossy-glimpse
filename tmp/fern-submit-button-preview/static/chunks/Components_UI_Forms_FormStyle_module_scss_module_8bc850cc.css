@@ -1,0 +1,152 @@
+/* [project]/Components/UI/Forms/FormStyle.module.scss.module.css [app-client] (css) */
+.FormStyle-module-scss-module__bpioeW__container {
+  padding: 0 !important;
+}
+
+.FormStyle-module-scss-module__bpioeW__container .FormStyle-module-scss-module__bpioeW__inputWrapper {
+  background: var(--brand-surface);
+  border-radius: 12px;
+}
+
+.FormStyle-module-scss-module__bpioeW__nameRow {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  display: grid;
+}
+
+.FormStyle-module-scss-module__bpioeW__nameRow > .MuiFormControl-root {
+  min-width: 0;
+  margin-top: 0 !important;
+}
+
+@media (min-width: 1001px) {
+  .FormStyle-module-scss-module__bpioeW__nameRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.FormStyle-module-scss-module__bpioeW__submitButton.MuiButton-loading.Mui-disabled {
+  background: var(--brand-primary);
+  box-shadow: none;
+}
+
+.FormStyle-module-scss-module__bpioeW__submitButton.MuiButton-loading.Mui-disabled .FormStyle-module-scss-module__bpioeW__submitLabel {
+  visibility: hidden;
+}
+
+.FormStyle-module-scss-module__bpioeW__loadingContent {
+  color: #fff;
+  white-space: nowrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .FormStyle-module-scss-module__bpioeW__inputWrapper > .MuiFormControl-root {
+  margin-top: 16px;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .FormStyle-module-scss-module__bpioeW__inputWrapper > .MuiFormControl-root:first-child {
+  margin-top: 0;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiOutlinedInput-root {
+  min-height: 58px;
+  color: var(--hero-copy);
+  background: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--brand-border);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--hero-ink);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--hero-ink);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #c62828;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiInputLabel-root {
+  color: var(--hero-copy);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiInputLabel-root.Mui-focused {
+  color: var(--hero-ink);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiInputLabel-root.Mui-error {
+  color: #c62828;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiInputBase-multiline {
+  align-items: flex-start;
+  min-height: 108px;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiSelect-select {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiChip-root {
+  color: var(--hero-ink);
+  border-color: var(--brand-border);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiChip-filled {
+  background: var(--hero-accent);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero .MuiTypography-h6 {
+  color: var(--hero-ink);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"] {
+  background: var(--hero-accent);
+  min-height: 54px;
+  color: var(--hero-ink);
+  text-transform: uppercase;
+  box-shadow: none;
+  margin-top: 18px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"]:hover {
+  background: var(--brand-accent-hover);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"].MuiButton-loading.Mui-disabled {
+  background: var(--hero-accent);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"]:focus-visible {
+  outline: 3px solid var(--hero-ink);
+  outline-offset: 3px;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"] .MuiButton-endIcon {
+  margin-left: 14px;
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"] .MuiCircularProgress-root {
+  color: var(--hero-ink);
+}
+
+.FormStyle-module-scss-module__bpioeW__hero button[type="submit"] .FormStyle-module-scss-module__bpioeW__loadingContent {
+  color: var(--hero-ink);
+}
+
+/*# sourceMappingURL=Components_UI_Forms_FormStyle_module_scss_module_8bc850cc.css.map*/

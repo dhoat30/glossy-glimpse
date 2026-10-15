@@ -1,0 +1,6 @@
+.info { max-width: 850px; margin: auto; padding: 85px 35px 100px; h1 { font-family: var(--font-display); font-size: clamp(48px,7vw,75px); font-weight: 600; line-height: 1; margin: 0 0 35px; span { color: #38b6ef; } } > p:not(.eyebrow) { color: #aab5c5; font-size: 14px; line-height: 1.9; margin-bottom: 25px; } h2 { margin-top: 40px; font-size: 19px; font-weight: 500; } a { color: #38b6ef; } }
+.eyebrow { color: #38b6ef; letter-spacing: 2px; font-size: 10px; margin-bottom: 24px; }
+.actions { display: flex; flex-wrap: wrap; gap: 25px; margin-top: 35px; align-items: center; }
+.button { background: #38b6ef; color: #080f1b !important; font-size: 13px; padding: 16px 22px; display: inline-flex; gap: 14px; align-items: center; border-radius: 3px; }
+.back { display: flex; align-items: center; gap: 10px; font-size: 12px; }
+@media(max-width:650px) { .info { padding: 55px 24px; } }

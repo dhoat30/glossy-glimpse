@@ -1,0 +1,87 @@
+.section {
+    padding: 120px 0 120px 0;
+    overflow: hidden !important;
+    background: var(--light-surface-container-lowest);
+        margin-top: -1px;
+
+    @media(max-width:600px ){
+        padding: 64px 0 64px 0;
+
+    }
+    .titleContainer {
+        grid-template-columns: 1fr;
+        @media(max-width:1100px ){
+           display: flex;
+           flex-direction: column-reverse;
+           gap: 24px
+        }
+        .imageWrapper{
+            overflow: visible !important;
+        }
+        .contentWrapper{
+            .titleWrapper{
+
+            }
+        }
+
+
+    }
+
+     .stepsContainer{
+            grid-template-columns: 1fr 1fr 1fr;
+    @media(max-width:900px ){
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px !important;
+    }
+            .stepWrapper{
+                position: relative;
+              background: var(--light-surface-container-low);
+              padding: 32px 24px;
+                border: 1px solid var(--light-outline-variant);
+                transition: box-shadow 0.25s ease, transform 0.25s ease;
+                &:hover{
+                    box-shadow: 0 12px 28px rgba(30, 91, 67, 0.1);
+                    transform: translateY(-4px);
+                }
+                /* dashed connector between step circles on desktop */
+                @media(min-width: 900px){
+                    &:not(:last-child)::after{
+                        content: "";
+                        position: absolute;
+                        top: 64px; /* vertical centre of the number circle */
+                        right: -33px;
+                        width: 34px;
+                        border-top: 2px dashed var(--light-primary-fixed-dim);
+                    }
+                }
+                .title{
+                   .stepTitleNumberWrapper{
+                    background: var(--light-primary);
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 6px var(--light-primary-container);
+                    .stepNumber{
+                        font-weight: 700;
+
+                    }
+                   }
+                }
+                .content{
+
+                }
+            }
+        }
+
+    .ctaRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        p{
+            color: var(--light-on-surface-variant);
+        }
+    }
+
+}

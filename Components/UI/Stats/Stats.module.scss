@@ -1,0 +1,33 @@
+.section{
+    padding: 56px 0;
+    background: linear-gradient(
+        92deg,
+        var(--brand-primary-deep) 0%,
+        var(--brand-primary) 55%,
+        #476C3E 100%
+    );
+    @media(max-width: 600px){
+        padding: 32px 0;
+    }
+    .container {
+        @media(max-width: 600px ){
+            justify-content: center;
+        }
+       .statWrapper{
+        flex: 1;
+        min-width: 180px;
+        @media(min-width: 700px){
+            &:not(:first-child){
+                border-left: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        .value{
+            color: white;
+            font-weight: 700;
+        }
+        .label{
+            color: rgba(255, 255, 255, 0.85);
+        }
+       }
+    }
+}

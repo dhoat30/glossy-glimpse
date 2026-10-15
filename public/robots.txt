@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://quote.glossyglimpse.co.nz
+
+# Sitemaps
+Sitemap: https://quote.glossyglimpse.co.nz/sitemap.xml
